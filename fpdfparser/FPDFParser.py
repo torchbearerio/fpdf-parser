@@ -2,7 +2,7 @@ from fpdfparser import parser_utils
 from geopy.distance import great_circle
 
 
-class RPDFParser:
+class FPDFParser:
     def __init__(self, filename):
         with open(filename) as file:
             self._parsed_entries = parser_utils.parse_updf_file(file)
